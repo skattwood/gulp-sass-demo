@@ -1,0 +1,22 @@
+{
+  "name": "gulp-sass-demo",
+  "version": "1.0.0",
+  "authors": [
+    "Scott Attwood"
+  ],
+  "description": "Bower components gulp-sass demo",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "~2.7.1",
+    "jquery": "~2.1.0",
+    "normalize.css": "~3.0.0"
+  }
+}

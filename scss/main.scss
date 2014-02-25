@@ -1,0 +1,47 @@
+// Import partials
+@import "variables";
+@import "mixins";
+
+html body {
+  background-color: $body-color;
+}
+
+.content-box {
+  margin: 0 auto;
+  background-color: #e2e2e2;
+  @include box-shadow($shadow-radius);
+  padding: 10px 20px;
+  margin-top: 100px;
+  width: 75%;
+  @include breakpoint(fat) { width: 60%; }
+  @include breakpoint(norm) { width: 80%; }
+  @include breakpoint(lil) { width: 95%; }
+
+  > h1 {
+  color: $font-color;
+  font-family: $heading-fonts;
+  font-weight: normal;
+  }
+
+  p {
+   font-family: $copy-fonts;
+
+    &.alert {
+      border: 1px solid red;
+      background-color: pink;
+      padding: 10px;
+      font-size: 11px;
+    }
+
+  }
+
+  button {
+    @include button-primary(black, white, gray);
+  }
+
+  a.button {
+    @include button-primary(purple, pink, blue);
+    cursor: pointer;
+  }
+
+}
