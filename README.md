@@ -4,4 +4,5 @@
     cd to root of application
     npm install(assuming Node Package Manager is installed)
     bower install
+    gulp
     serve .
